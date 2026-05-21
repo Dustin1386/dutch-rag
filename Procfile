@@ -1,1 +1,1 @@
-pip freeze > requirements.txt
+web: python app.py
