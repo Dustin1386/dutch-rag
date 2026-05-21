@@ -7,11 +7,6 @@ from llama_index.llms.openai import OpenAI
 from llama_index.core import Settings
 import chromadb
 
-# Set your OpenAI API key
-os.environ["OPENAI_API_KEY"] = (
-    "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"
-)
-
 # Configure the LLM and embedding model
 Settings.llm = OpenAI(model="gpt-4o", temperature=0.1)
 Settings.embed_model = OpenAIEmbedding(model="text-embedding-3-small")
